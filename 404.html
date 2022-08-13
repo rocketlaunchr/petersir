@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PETERSIR — The Actor</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn Lines Fast for actors" />
+    <meta
+      name="keywords"
+      content="Actors, Acting, Lines, Scripts, Screenplay, Screenwriting, Learning, Learning Lines"
+    />
+    <meta name="author" content="Peter Sir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="msapplication-TileColor" content="#161616" />
+    <meta name="theme-color" content="#161616" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/_app/start-fda3121b.js">
+	<link rel="modulepreload" href="/_app/chunks/index-61eb6ca2.js">
+	<link rel="modulepreload" href="/_app/chunks/index-193ed16b.js">
+	<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
+	<link rel="modulepreload" href="/_app/chunks/singletons-d1fb5791.js">
+    <style>
+      body {
+        overscroll-behavior: none;
+      }
+    </style>
+    <script>
+      // Register Service worker for Add to Home Screen option to work
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MCQTNCJEP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5MCQTNCJEP');
+    </script>
+    <script>
+      var ringAudio = new Audio('/ringing.mp3');
+      ringAudio.loop = true;
+      ringAudio.volume = 0.2;
+
+      var webrtcAudio = new Audio();
+      var SimplePeerInstance = undefined;
+      var pollingCancelFunc = undefined;
+
+      var country=''; // For paper size
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+		<script type="module" data-hydrate="45h">
+		import { start } from "/_app/start-fda3121b.js";
+		start({
+			target: document.querySelector('[data-hydrate="45h"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: true,
+			trailing_slash: "always",
+			hydrate: null
+		});
+	</script></div>
+  </body>
+</html>
